@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>all_models</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.2.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span></span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="intro.html">Introduction</a></li>
+          <li><a class="nav-link scrollto" href="dataset.html">Dataset</a></li>
+          <li><a class="nav-link scrollto" href="index.html#workflow">Workflow</a></li>
+          <li><a class="nav-link scrollto" href="neural_networks.html">Neural Networks</a></li>
+          <li><a class="nav-link scrollto" href="all_models.html">Models</a></li>  
+          <li><a class="nav-link scrollto" href="index.html#results">Results</a></li>  
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <li>Neural Networks</li>
+        </ol>
+        <h2>Neural Networks</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <!-- <div class="entry-img">
+                <img src="assets/img/blog/intro-1.png" alt="" class="img-fluid">
+              </div> -->
+
+              <div class="entry-content">
+                <h2>NO AUGMENTATION</h2>
+                <h3>Description:</h3>
+                <p>
+                  The model architecture with different convent layers followed by fully connected layers is as shown below.
+                  Computed accuracy with just Pre-processing and fit the training data to the model.
+                </p>
+                
+                
+                <style>.rightimage {text-align-last: center;}</style>
+                <div class="rightimage"> <img src="assets/img/no_aug_cnn_model/no_aug_model_cnn.png" alt="resnet_50"></div>
+              
+                <br></br>
+                <h2>DATA AUGMENTATION</h2>
+                <h3>Description:</h3>
+                <p>
+                  In image data augmentation, we take a single image from the available images, apply some transformation 
+                  techniques like right shift, left shift, and zooming. Transformed versions of images in the training 
+                  dataset that belong to the same class as the original image are created in this process.
+                  The transformation should be chosen carefully otherwise the dataset may become out of the 
+                  contest.
+                </p>
+                
+                <style>.rightimage {text-align-last: center;}</style>
+                <div class="rightimage"> <img src="assets/img/data_aug.png" alt="vgg-19"></div>
+                <br></br>
+
+                <style>.rightimage {text-align-last: center;}</style>
+                <div class="rightimage"> <img src="assets/img/aug_cnn_model/heatmap_aug.png" alt="vgg-19"></div>
+                <br></br>
+                
+                <h2>ALEXNET</h2>
+                <h3>Description:</h3>
+                <p>
+                  AlexNet is one of the most popular neural network architectures to date. 
+                  It was proposed by Alex Krizhevsky for the ImageNet Large Scale Visual Recognition Challenge (ILSVRV), 
+                  and is based on convolutional neural networks. ILSVRV evaluates algorithms for Object Detection and 
+                  Image Classification. In 2012, Alex Krizhevsky  et al. published ImageNet Classification with Deep 
+                  Convolutional Neural Networks. This is when AlexNet was first heard of.  
+                </p>
+                
+                <style>.rightimage {text-align-last: center;}</style>
+                <div class="rightimage"> <img src="assets/img/alexnet/alexnet_model.png" alt="vgg-19"></div>
+                
+                <br></br>
+
+                <h2>VGG-19</h2>
+                <h3>Description:</h3>
+                <p>
+                  VGG-19 is a trained Convolutional Neural Network, from Visual Geometry Group, Department of 
+                  Engineering Science, University of Oxford. The number 19 stands for the number of layers with 
+                  trainable weights. 16 Convolutional layers and 3 Fully Connected layers. 
+                </p>
+                
+                <style>.rightimage {text-align-last: center;}</style>
+                <div class="rightimage"> <img src="assets/img/vgg_19/vgg_19_model.png" alt="vgg-19"></div>
+                
+                <br></br>
+
+                <h2>RESNET50</h2>
+                <h3>Description:</h3>
+                <p>
+                one of the bottlenecks of VGG is that they couldn’t go as deep as wanted, because they started to lose 
+                generalization capability. ResNets solve’s this known as vanishing gradient. This is because when the 
+                network is too deep, the gradients from where the loss function is calculated easily shrink to zero after 
+                several applications of the chain rule. This result on the weights never updating its values and therefore, 
+                no learning is being performed. With ResNets, the gradients can flow directly through the skip connections 
+                ackwards from later layers to initial filters.
+                </p>
+                
+                <style>.rightimage {text-align-last: center;}</style>
+                <div class="rightimage"> <img src="assets/img/resnet50/resnet50_model.png" alt="resnet_50"></div>
+                
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

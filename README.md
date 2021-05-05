@@ -1,2 +1,2 @@
-# capstone
-final_capstone_project - spring2021
+# dinesh-driod.github.io-capstone
+Final Capstone Project

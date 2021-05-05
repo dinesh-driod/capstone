@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Traffic Signal Recognition</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.2.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span></span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Introduction</a></li>
+          <li><a class="nav-link scrollto" href="#dataset">Dataset</a></li>
+          <li><a class="nav-link scrollto" href="#workflow">Workflow</a></li>
+          <li><a class="nav-link scrollto" href="#nn">Neural Networks</a></li>
+          <li><a class="nav-link scrollto" href="#models">Models</a></li>  
+          <li><a class="nav-link scrollto" href="#results">Results</a></li>  
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Traffic Signal Recognition</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">How can we automate and classify Traffic signs to reduce road accidents ?</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Get Started</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <!-- <img src="assets/img/hero-1.png" class="img-fluid" alt=""> -->
+          <iframe src="https://drive.google.com/file/d/1rjJjjetutx-9NaNGH2N6n7eGt566MWk6/preview" width="600" height="300" allow="autoplay"></iframe>
+          
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Introductiion Section======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h2>INTRODUCTION</h2>
+              <!-- <h2>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h2> -->
+              <p>In recent years, extensive research is being made by major car manufacturing companies on real-time and 
+                automatic recognition of traffic signs, so that it can be a part of the so called “Driver Support Systems”.
+                Traffic sign recognition (TSR) can be considered part of the bigger problem of autonomous vehicles. 
+                An autonomous vehicle system relies on vision-based recognition of surrounding area in order to make driving 
+                decisions. This vision-based recognition system may function as the feedback provider for control of 
+                steering wheel, accelerator, brake, etc. 
+              </p>
+
+              <div class="text-center text-lg-start">
+                <a href="intro.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
+            <img src="assets/img/hero-1.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End of Introduction Section -->
+
+    <!-- ======= Dataset Section ======= -->
+    <section id="dataset" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h2>DATASET</h2>
+              <p>
+                The German Traffic Sign Benchmark is a multi-class, single-image classification challenge held at the International Joint Conference on Neural Networks (IJCNN) 2011. 
+                The data-set can be downloaded from this Kaggle link.
+              </p>
+              <p>
+                The Dataset can also be downloaded benchmark data sets and results for computer vision and machine 
+                learning problems. The benchmark data sets are compiled by the Real-Time Computer Vision group at our
+                 institute. Currently, there are two data sets available, the German Traffic Sign Recognition Benchmark (GTSRB), 
+                 a large multi-category classification benchmark, and the German Traffic Sign Detection Benchmark (GTSDB). 
+                 The first was used in a competition at IJCNN 2011.
+              </p>
+
+              <div class="text-center text-lg-start">
+                <a href="dataset.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/dataset.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Dataset Section -->
+
+  
+    <!-- ======= Project Workflow Section ======= -->
+    <section id="workflow" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Project Workflow</h2>
+          <p> To build sequential model using Keras neural network library with TensorFlow backend.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/workflow.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Import Libraries</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Distinct dataset 3!</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Dimensions accepted by keras</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Convert labels to categorical values</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Model with no augmentation</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Model with transfer learning</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+
+        <!-- Model Development Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>Model Devlopments</h3>
+            
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Selection</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Evaluation</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Enviornment</a>
+              </li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Baseline Model</h4>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Transfer Learning</h4>
+                </div>
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade show" id="tab2">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Accuracy and Loss curves</h4>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Classification Report</h4>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Performance Metrics: Precision and F1-score</h4>
+                </div>
+              </div><!-- End Tab 2 Content -->
+
+              <div class="tab-pane fade show" id="tab3">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Software Environment:</h4>
+                </div>
+                <br>JetBrains PyCharm 2019.3.5.</br>
+                <br>Anaconda libraries.</br>
+                <br>TensorFlow 2.4.0.</br>
+                <br>Python 3.7.4.</br>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Computation Environment:</h4>
+                </div>
+                <p>AMAZON AWS.</p>
+                <p>Description: VGA compatible controller</p>
+                <p>Product: GM204GL [Tesla M60]</p>
+                <p>Vendor: NVIDIA Corporation</p>
+              </div><!-- End Tab 3 Content -->
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/model.png" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- End Feature Tabs -->
+      </div>
+    </section><!-- End of Project workflow Section -->
+
+    <!-- ======= Transfer Learning Section ======= -->
+    <section id="nn" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>TRANSFER LEARNING</h2>
+          <p>State-of-the-art neural network algorithms performance of traffic sign recognition.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/20.png" class="img-fluid" alt="">
+              <h3>ALEXNET</h3>
+              <p>Input Dimension: 256 × 256 × 3</p>
+              <p>Parameters: 60 Million </p>
+              <p>Neurons: 650K.</p>
+              <a href="neural_networks.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/30.png" class="img-fluid" alt="">
+              <h3>VGG-19</h3>
+              <p>Input Size: 224x224.</p>
+              <p>Layers: Fully Connected.</p>
+              <p>Parameters: 144 Million</p>
+              <a href="neural_networks.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/img/60.png" class="img-fluid" alt="">
+              <h3>RESNET50</h3>
+              <p>Batch Normalization</p>
+              <p>Identity Connection</p>
+              <p>Bottleneck residual block design.</p>
+              <a href="neural_networks.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Transfer Learning Section -->
+
+    <!-- ======= ModelSection ======= -->
+    <section id="models" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Models</h2>
+          <p>Comparision of different trained models to see which is the best for our study.</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>CNN - NO AUGMENTATION</h3>
+              <p>Computation of accuracy with just Pre-processing and fit the training data to the model.</p>
+              <a href="all_models.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>CNN AUGMENTATION</h3>
+              <p>Computation of accuracy with Pre-processing, augmentation and fit the training data to the model.</p>
+              <a href="all_models.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>ALEXNET</h3>
+              <p>Computation of accuracy with Pre-processing, augmentation and fit the training data to the transfer learning(alexnet).</p>
+              <a href="all_models.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-discuss-line icon"></i>
+              <h3>VGG-19</h3>
+              <p>Computation of accuracy with Pre-processing, augmentation and fit the training data to the transfer learning(VGG-19).</p>
+              <a href="all_models.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-discuss-line icon"></i>
+              <h3>RESNET50</h3>
+              <p>Computation of accuracy with Pre-processing, augmentation and fit the training data to the transfer learning(RESNET50).</p>
+              <a href="all_models.html" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= RESULTS Section ======= -->
+    <section id="results" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Accuracy, loss curves and classification report </h2>
+          <p>RESULTS</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <!-- <li data-filter=".filter-app">No-Augmentation</li> -->
+              <li data-filter=".filter-card">Classification Report</li>
+              <li data-filter=".filter-web">Accuracy & Loss Curves</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/no_aug_cnn_model/no_aug_model_eval.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>NO AUGMENTATION</h4>
+                <p>Validation and accuracy loss</p>
+                <div class="portfolio-links">
+                <a href="assets/img/no_aug_cnn_model/no_aug_model_eval.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="ALEXNET"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/alexnet/alexnet_model_eval.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>ALEXNET</h4>
+                <p>Validationa and accuracy loss</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/alexnet/alexnet_model_eval.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="ALEXNET"><i class="bi bi-plus"></i></a>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/no_aug_cnn_model/no_aug_accuracy.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>NO AUGMENTATION</h4>
+                <p>CLASSIFICATION REPORT</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/no_aug_cnn_model/no_aug_cr.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="No Augmentation - Classification Report"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/resnet50/resnet50_model_eval.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RESNET50</h4>
+                <p>Validation and Accuracy</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/resnet50/resnet50_model_eval.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="RESNET50"><i class="bi bi-plus"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/vgg_19/vgg_19_cr.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>VGG-19</h4>
+                <p>CLASSIFICATION REPORT</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/vgg_19/cr_vgg_19.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="VGG-19: CLASSIFICATION REPORT"> <i class="bi bi-plus"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/resnet50/resnet50_cr.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RESNET50</h4>
+                <p>CLASSIFICATION REPORT</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/resnet50/cr_resnet50.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="RESNET50: CLASSIFICATION REPORT"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/alexnet/alex_cr.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>ALEXNET</h4>
+                <p>CLASSIFICATION REPORT</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/alexnet/cr_alexnet.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="ALEXNET: CLASSIFICATION REPORT"><i class="bi bi-plus"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/model_evaluations/vgg_19.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>VGG19</h4>
+                <p>Validation and Accuracy</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/model_evaluations/vgg_19.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="VGG19"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
+    <!-- ======= Project Workflow Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+      
+        <div class="row">
+          
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <header class="section-header">
+            <h3>KEYINSIGHTS</h3>
+          </header>
+          <div class="row">
+
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/key.png" class="img-fluid p-4" alt="">
+            </div>
+
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>No Augmentation</h4>
+                    <p>Precision:0.58</p> 
+                    <p>F1-Score:0.55</p>
+                    <p>Accuracy:0.63</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>TRANSFER LEARNING: VGG-19</h4>
+                    <p>Precision:0.98</p> 
+                    <p>F1-Score:0.98</p>
+                    <p>Accuracy:0.98</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>TRANSFER LEARNING: ALEXNET</h4>
+                    <p>Precision:0.97</p> 
+                    <p>F1-Score:0.96</p>
+                    <p>Accuracy:0.98</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>TRANSFER LEARNING: RESNET50</h4>
+                    <p>Precision:0.95</p> 
+                    <p>F1-Score:0.95</p>
+                    <p>Accuracy:0.95</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>FINAL THOUGHTS!</h3>
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1">
+                <!-- <p> Followed by transfer learning</p> -->
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h5>There is still room for improvement!</h5>
+                </div>
+                <!-- <p>X1.</p> -->
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h5>Model Patching!</h5>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h5>YOLO!</h5>
+                </div>
+                <!-- <p>X3.</p> -->
+              </div><!-- End Tab 1 Content -->
+
+              
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/en.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- End Feature Tabs -->
+  </main><!-- End #main -->
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
